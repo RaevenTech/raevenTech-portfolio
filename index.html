@@ -12,12 +12,19 @@
             integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,900;1,600;1,700&family=Source+Sans+Pro:wght@200;300;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
         <title>RaevenTech</title>
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="assets/Portfolio/devjane.png" alt="logo" />
+                <h2 class="logo_text">{.RaevenTech }</h2>
             </div>
             <button class="nav_toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -45,16 +52,17 @@
 
         <!-- Introduction section -->
 
-        <section class="introduction" id="home">
-            <h1 class="section_title section_tile--intro">
-                Hi, I am <srtong> Raeven Goncalves</srtong>
+        <section class="intro" id="home">
+            <h1 class="section_title section_title--intro">
+                Hi, I am <strong>Raeven Goncalves</strong>
             </h1>
             <p class="section_subtitle section_subtitle--intro">
-                front-end dev
+                front-end web dev
             </p>
             <img
-                src="assets/Portfolio/dev-jane-01.jpg"
+                src="assets/Portfolio/profile-pic.jpg"
                 alt="Raeven Goncalves"
+                class="intro_img"
             />
         </section>
 
@@ -65,7 +73,7 @@
             <div class="services">
                 <!-- service -->
                 <div class="service">
-                    <h3>Development</h3>
+                    <h3>Development + Design</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -100,16 +108,126 @@
             <a href="#work" class="btn">My Work</a>
         </section>
 
-        <!-- About Me-->
+        <!-- About Me -->
 
         <section class="about_me" id="about">
             <h2 class="section_title section_title--about">Who am I</h2>
-            <p class="section_subtitle section_subtitle--about"></p>
+            <p class="section_subtitle section_subtitle--about">
+                Developer based out of Portugal
+            </p>
             <div class="about_me__body">
-                <p></p>
-                <p></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
             </div>
-            <img src="assets/Portfolio/dev-jane-02.jpg" alt="Raeven" />
+            <img
+                class="about_me_img"
+                src="assets/Portfolio/profile-long.jpg"
+                alt="Raeven"
+            />
         </section>
+
+        <!-- My Work -->
+
+        <section class="my_work" id="work">
+            <h2 class="section_title">My Work</h2>
+            <p class="section_subtitle"></p>
+            <div class="portfolio">
+                <!-- Portfolio item -->
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-01.jpg"
+                        alt="portfolio_img"
+                    />
+                </a>
+                <!-- Portfolio item -->
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-02.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-03.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-04.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-05.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-06.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-07.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-08.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-09.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+                <a href="#" class="portfolio_item">
+                    <img
+                        src="assets/Portfolio/portfolio-10.jpg"
+                        alt=""
+                        class="portfolio_img"
+                    />
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <a href="mailto:raevengoncalves@gmail.com" id="Contact"
+                >raevengoncalves@gmail.com</a
+            >
+            <ul class="social_list">
+                <li><a href="https://linkedin.com">linkedin</a></li>
+                <li><a href="https://github.com">github</a></li>
+                <li><a href="https://instagrm.com">instagram</a></li>
+                <li><a href="https://facebook.com">facebook</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
