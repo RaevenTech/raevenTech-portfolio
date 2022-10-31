@@ -261,6 +261,10 @@ header {
     box-shadow: var(--bs);
    
 }
+.small {
+    color: black;
+    font-size: .7em;
+}
 
 .section_subtitle--intro {
     display: inline-block;
@@ -396,7 +400,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
 .portfolio_item {
@@ -468,11 +472,14 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
-    cursor: pointer;
+    
 }
 
 .portfolio_item_individual p {
     max-width: 600px;
     margin-right:auto;
+}
+.portfolio_item_img {
+    cursor: pointer;
 }
 
