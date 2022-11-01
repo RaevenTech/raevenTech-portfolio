@@ -261,8 +261,11 @@ header {
     box-shadow: var(--bs);
    
 }
-.small {
-    color: black;
+.small_btn {
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    border: none;
+    padding: 5px 10px;
     font-size: .7em;
 }
 
@@ -407,8 +410,7 @@ header {
     border: 1px solid white;
     background-color: var(--clr-dark);
     overflow: hidden;
-    transition: transform .75s ease-in-out;
-    opacity: .25s linear;
+    
 }
 
 .portfolio_item {
