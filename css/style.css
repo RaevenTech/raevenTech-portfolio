@@ -401,6 +401,14 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: .25em;
+}
+.portfolio_item_el {
+    border: 1px solid white;
+    background-color: var(--clr-dark);
+    overflow: hidden;
+    transition: transform .75s ease-in-out;
+    opacity: .25s linear;
 }
 
 .portfolio_item {
@@ -416,6 +424,7 @@ header {
     position: relative;
     z-index: 2;
 }
+
 
 .portfolio_img:hover, .portfolio_item:focus .portfolio_img {
     transform: scale(1.1);
