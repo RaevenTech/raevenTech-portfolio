@@ -455,6 +455,15 @@ header {
 
 .js-img {
   background-color: #0e0e0e;
+  position: relative;
+}
+
+.js-hover-subtitle {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
 }
 
 .per-dashboard {
@@ -481,6 +490,10 @@ header {
   transform: scale(1.1);
   opacity: .75;
 }
+
+
+
+
 
 /*-- Footer --*/
 
