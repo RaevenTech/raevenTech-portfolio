@@ -457,13 +457,18 @@ header {
   background-color: #0e0e0e;
 }
 
-.rpsEl {
-  background-color: #3D1F09;
+.per-dashboard {
+  background-color: #111;
 }
 
-.rps-img {
-  object-fit: contain;
+.per-dashboard-img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  object-fit: cover;
 }
+
+
 
 .portfolio_item:focus {
   position: relative;
