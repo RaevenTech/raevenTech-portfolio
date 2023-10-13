@@ -54,6 +54,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
+  user-select: none;
 }
 
 img {
@@ -430,6 +431,13 @@ header {
   text-align: center;
 }
 
+.select-img-text {
+  text-align: left;
+  margin: 0em;
+  font-size: 1rem;
+  color: grey;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -455,6 +463,15 @@ header {
 
 .js-img {
   background-color: #0e0e0e;
+  position: relative;
+}
+
+.js-subtitle {
+  position: absolute;
+  top: 5em;
+  left: 0em;
+  color: goldenrod;
+  background: transparent;
 }
 
 .per-dashboard {
