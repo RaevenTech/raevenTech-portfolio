@@ -439,12 +439,15 @@ header {
 }
 
 .portfolio {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: .25em;
+  gap: .25em; */
 }
 
 .portfolio_item_el {
+  flex: 1;
   border: 1px solid white;
   background-color: var(--clr-dark);
   overflow: hidden;
