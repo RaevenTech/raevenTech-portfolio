@@ -431,6 +431,14 @@ header {
   text-align: center;
 }
 
+.my_work_first_row{
+  padding-bottom: 10px;
+}
+
+.my_work_second_row{
+  padding-top: 0px;
+}
+
 .select-img-text {
   text-align: left;
   margin: 0em;
@@ -566,4 +574,12 @@ header {
 
 .portfolio_item_img {
   cursor: pointer;
+}
+
+/*-- linguaFlow business page image styling --*/
+#linguaFlow_business-page .portfolio_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
 }
