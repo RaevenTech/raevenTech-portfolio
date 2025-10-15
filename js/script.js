@@ -13,4 +13,24 @@ navLinks.forEach((link) => {
     })
 })
 
+// Scroll to top button functionality
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show/hide button based on scroll position (200px threshold)
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 200) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+});
+
+// Smooth scroll to top when button is clicked
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 
