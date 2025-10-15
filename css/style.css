@@ -598,6 +598,58 @@ header {
   margin: 0;
 }
 
+/*-- Contact form styling --*/
+.contact_form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 400px;
+}
+
+.form-group label {
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
+  font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75em;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(22, 224, 189, 0.1);
+}
+
+.form-group textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  margin-top: 1em;
+}
+
 /*-- Scroll to top button --*/
 .scroll-to-top-btn {
   position: fixed;
