@@ -598,6 +598,12 @@ header {
   margin: 0;
 }
 
+/*-- Second row portfolio items styling --*/
+.second_row_portfolio_item {
+  width: 300px;
+  margin: 0 auto;
+}
+
 /*-- Contact form styling --*/
 .contact_form {
   max-width: 600px;
