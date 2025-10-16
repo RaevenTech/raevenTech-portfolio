@@ -53,29 +53,37 @@ if (contactForm) {
                 'Accept': 'application/json'
             }
         })
-        .then(response => {
+        .then(async response => {
+            const isJson = response.headers.get('content-type')?.includes('application/json');
+            const data = isJson ? await response.json().catch(() => null) : null;
+
             if (response.ok) {
-                // Success
                 submitBtn.textContent = 'Message Sent!';
                 submitBtn.style.backgroundColor = '#28a745';
                 this.reset();
-                
-                // Reset button after 3 seconds
+
+                // Optional redirect if _next is provided on the form
+                const nextInput = this.querySelector('input[name="_next"]');
+                if (nextInput && nextInput.value) {
+                    try { window.location.href = nextInput.value; } catch (_) {}
+                }
+
                 setTimeout(() => {
                     submitBtn.textContent = originalText;
                     submitBtn.style.backgroundColor = '';
                     submitBtn.disabled = false;
                 }, 3000);
             } else {
-                throw new Error('Form submission failed');
+                const message = data?.errors?.map(e => e.message).join(', ') || data?.message || `Status ${response.status}`;
+                console.error('Form submission failed:', message, data);
+                throw new Error(message);
             }
         })
         .catch(error => {
-            // Error
+            console.error('Form submit error:', error);
             submitBtn.textContent = 'Error - Try Again';
             submitBtn.style.backgroundColor = '#dc3545';
-            
-            // Reset button after 3 seconds
+
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.style.backgroundColor = '';
